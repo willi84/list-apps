@@ -1,0 +1,27 @@
+{
+  "name": "list-apps",
+  "version": "1.0.0",
+  "description": "little command-line tool to list all apps with package.json",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --env=jsdom --coverage --runInBand"
+  },
+  "keywords": [
+    "list",
+    "apps"
+  ],
+  "author": "Robert Willemelis",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willi84/list-apps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/willi84/list-apps/issues"
+  },
+  "homepage": "https://github.com/willi84/list-apps#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "mock-fs": "^5.4.1"
+  }
+}
