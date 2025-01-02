@@ -1,0 +1,32 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true,
+        "jest": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "trailingComma": "none", // No trailing commas
+                "semi": true, // Add semicolons at the end of statements
+                "singleQuote": true,
+                "tabWidth": 4,
+                "useTabs": false,
+                "endOfLine": "auto"
+            }
+        ],
+        "quotes": ["error", "single"],
+        "indent": ["error", 4],
+        "semi": ["error", "always"]
+    }
+}

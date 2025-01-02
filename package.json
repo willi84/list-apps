@@ -2,7 +2,10 @@
   "name": "list-apps",
   "version": "1.0.0",
   "description": "little command-line tool to list all apps with package.json",
-  "main": "index.js",
+  "bin": {
+    "list-apps": "./index.js"
+  },
+  "main": "src/index.js",
   "scripts": {
     "test": "jest --env=jsdom --coverage --runInBand"
   },
@@ -21,7 +24,13 @@
   },
   "homepage": "https://github.com/willi84/list-apps#readme",
   "devDependencies": {
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^28.10.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "jest": "^29.7.0",
-    "mock-fs": "^5.4.1"
+    "mock-fs": "^5.4.1",
+    "prettier": "^3.4.2",
+    "prettier-eslint": "^16.3.0"
   }
 }
