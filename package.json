@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "little command-line tool to list all apps with package.json",
   "bin": {
-    "list-apps": "./index.js"
+    "list-apps": "index.js",
+    "listXSSSS-my": "my.sh"
   },
   "main": "src/index.js",
   "scripts": {
+    "run": "node ./index.js",
+    "debug": "sh -c 'source ./cd.sh src'",
+    "install-lib": "npm uninstall -g list-apps && npm link && npm link list-apps",
+    "postinstall": "chmod +x ./cd.sh && chmod +x ./my.sh && chmod +x ./install.sh && ./install.sh",
     "test": "jest --env=jsdom --coverage --runInBand"
   },
   "keywords": [
@@ -32,5 +37,9 @@
     "mock-fs": "^5.4.1",
     "prettier": "^3.4.2",
     "prettier-eslint": "^16.3.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "prompts": "^2.4.2"
   }
 }

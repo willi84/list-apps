@@ -1,5 +1,5 @@
 const mock = require('mock-fs');
-const app = require('./index');
+const app = require('./fs');
 
 const FILES_APP_A = {
     'app-a': {
